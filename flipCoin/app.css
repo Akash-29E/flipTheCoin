@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    height: 100px;
+    background-color: #404A65;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(95, 106, 125);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+
+#heading {
+    text-shadow: 2px 2px 0px #35383f;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #35383f;
+}
+
+.custom-btn {
+    background-color: #1F6FB0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #1b6faa;
+    /* border-bottom: 3px solid #1a598e; */
+    border-radius: 6px;
+    padding: 10px 40px;
+    transition: all 0.15s ease;
+    font-size: larger;
+    box-shadow: 0px 4px 0px 0px #23649b;
+}
+
+.text-stroke {
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow:
+        -2px -2px 0 #35383F,
+        2px -2px 0 #35383F,
+        -2px 2px 0 #35383F,
+        2px 2px 0 #35383F,
+        0px 0px 3px #35383F;
+}
+
+.custom-btn:hover {
+    background-color: #1678c2;
+}
+
+.animation {
+    width: 160px;
+    height: 160px;
+    position:fixed;
+    animation-name: graphic;
+    left: 43.5%;
+    right: 56.5%;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    background-size:auto;
+    background-repeat: no-repeat;
+    transition: ease-in-out;
+    animation-fill-mode: forwards;
+    /* transform: translate(-50%, -50%); */
+    /* background-color: red; */
+}
+
+
+@keyframes graphic {
+    0% {
+        background-image: url("resources/heads.svg");
+        transform: scale(1, 1)
+    }
+
+    /* 25%  {background-image: url("resources/heads.svg")} */
+    25% {
+        background-image: url("resources/heads.svg");
+        transform: scale(1, 0.03)
+    }
+
+    26% {
+        background-image: url("resources/tails.svg");
+        transform: scale(1, 0.07)
+    }
+
+    50% {
+        background-image: url("resources/tails.svg");
+        transform: scale(1, 1)
+    }
+
+    75% {
+        background-image: url("resources/tails.svg");
+        transform: scale(1, 0.03)
+    }
+
+    76% {
+        background-image: url("resources/heads.svg");
+        transform: scale(1, 0.07)
+    }
+
+    /* 75%  {background-image: url("resources/tails.svg")} */
+    100% {
+        background-image: url("resources/heads.svg");
+        transform: scale(1, 1)
+    }
+}
+
+/* .coin {
+    width: 100px;
+    height: 100px;
+} */
