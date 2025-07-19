@@ -58,15 +58,12 @@ body {
 
 /* animation class to setup animation area and show initial coin image*/
 .animation {
-    width: 160px;
-    height: 160px;
-    position: fixed;
     animation-name: graphic;
-    left: 43%;
     animation-duration: 0.4s;
     animation-iteration-count: 0;
     background-image: url("resources/heads.svg");
     background-size: auto;
+    background-position: center;
     background-repeat: no-repeat;
     transition: ease-in-out;
     animation-fill-mode: forwards;
@@ -112,11 +109,7 @@ body {
 }
 
 .aniSh {
-    width: 100px;
-    height: 100px;
-    position: fixed;
     animation-name: graphicSh;
-    left: 45.5%;
     animation-duration: 0.4s;
     animation-iteration-count: 0;
     background-image: url("resources/Shado.png");
@@ -124,42 +117,43 @@ body {
     background-repeat: no-repeat;
     transition: ease-in-out;
     animation-fill-mode: forwards;
+    background-position: center;
 
 }
 
 @keyframes graphicSh {
     0% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.2, 0.5)
+        transform: scale(1.2, 0.3)
     }
 
     25% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.11, 1)
+        transform: scale(1.2, 0.8)
     }
 
     26% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.11, 1)
+        transform: scale(1.2, 0.8)
     }
 
     50% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.2, 0.5)
+        transform: scale(1.2, 0.3)
     }
 
     75% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.11, 1)
+        transform: scale(1.2, 0.8)
     }
 
     76% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.11, 1)
+        transform: scale(1.2, 0.8)
     }
 
     100% {
         background-image: url("resources/Shado.png");
-        transform: scale(1.2, 0.5)
+        transform: scale(1.2, 0.3)
     }
 }

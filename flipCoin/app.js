@@ -3,7 +3,7 @@ const coinImg = document.getElementById('coinImg');
 const coinShadow = document.getElementById('coinShdw');
 const results = document.getElementById('results');
 
-// JS logic to execute flip coin functionality and update text below coin accordingly. Also updated 'RANDOM' button to stay disabled until animation completes.
+// JS logic to execute flip coin functionality and update text below coin accordingly. Also, 'RANDOM' button and coin click listener stays disabled until animation completes.
 function flipCoin() {
     coinImg.classList.remove('animation');
     coinShadow.classList.remove('aniSh');
