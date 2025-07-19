@@ -33,7 +33,6 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     border: 1px solid #1b6faa;
-    /* border-bottom: 3px solid #1a598e; */
     border-radius: 6px;
     padding: 10px 40px;
     transition: all 0.15s ease;
@@ -57,31 +56,30 @@ body {
     background-color: #1678c2;
 }
 
+/* animation class to setup animation area and show initial coin image*/
 .animation {
     width: 160px;
     height: 160px;
-    position:fixed;
+    position: fixed;
     animation-name: graphic;
-    left: 43.5%;
-    right: 56.5%;
-    animation-duration: 0.5s;
-    animation-iteration-count: 2;
-    background-size:auto;
+    left: 43%;
+    animation-duration: 0.4s;
+    animation-iteration-count: 0;
+    background-image: url("resources/heads.svg");
+    background-size: auto;
     background-repeat: no-repeat;
     transition: ease-in-out;
     animation-fill-mode: forwards;
-    /* transform: translate(-50%, -50%); */
-    /* background-color: red; */
 }
 
 
+/* Logic to show flipping coin */
 @keyframes graphic {
     0% {
         background-image: url("resources/heads.svg");
         transform: scale(1, 1)
     }
 
-    /* 25%  {background-image: url("resources/heads.svg")} */
     25% {
         background-image: url("resources/heads.svg");
         transform: scale(1, 0.03)
@@ -107,14 +105,61 @@ body {
         transform: scale(1, 0.07)
     }
 
-    /* 75%  {background-image: url("resources/tails.svg")} */
     100% {
         background-image: url("resources/heads.svg");
         transform: scale(1, 1)
     }
 }
 
-/* .coin {
+.aniSh {
     width: 100px;
     height: 100px;
-} */
+    position: fixed;
+    animation-name: graphicSh;
+    left: 45.5%;
+    animation-duration: 0.4s;
+    animation-iteration-count: 0;
+    background-image: url("resources/Shado.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    transition: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes graphicSh {
+    0% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.2, 0.5)
+    }
+
+    25% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.11, 1)
+    }
+
+    26% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.11, 1)
+    }
+
+    50% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.2, 0.5)
+    }
+
+    75% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.11, 1)
+    }
+
+    76% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.11, 1)
+    }
+
+    100% {
+        background-image: url("resources/Shado.png");
+        transform: scale(1.2, 0.5)
+    }
+}
